@@ -1,0 +1,29 @@
+# Tableau-task-edubridge
+Step 1: Open tableau and Import the excel dataset which we are going to workout
+
+The attribute values are :
+
+Emp_name	 id	salary
+Ravish	10	1000
+Suresh	101	20000
+Priya	1010	50000
+Neha	10101	70000
+Nitin	1101	15000
+
+Step 2: After importing the Excel file.Just click on sheet1
+Step 3: Drag and drop the Table Attributes/features to the Rows to display table in the workbook page to start a new calculation
+
+Step 4: After Inserting the required values and select the Create Calculated Field.
+Step 5: After choosing that a dialogue box will appearinorder to do calculation
+Step 6:  
+LEFT('0000000',( 7 - LEN(STR([Emp id]))))
+  +
+  STR([Emp Id])
+  
+  Step 6:     Emp_name	Id	Employee_Id	Salary
+    Ravish	10	0000010 	70000
+    Suresh	101	0000101 	15000
+    Priya	1010	0001010 	50000
+    Neha	10101	0010101 	10000
+    Nitin	1101	0001101   20000
+ 
